@@ -1,0 +1,59 @@
+C#
+
+Task 1
+	
+using System;
+ class Program {
+ public static int Main() {
+  string num = Console.ReadLine();
+  int a = int.Parse(num);
+  string flag = "sade";
+  if(a % 2 == 0 && a != 2 || a == 1){
+      flag = "murekkeb";
+  }
+  for(int i = 2; i < a / 2; i++){
+      if(a % i == 0){
+          flag = "murekkeb";
+          break;
+      }
+  }
+  Console.WriteLine(flag);
+  return 0;
+ }
+}
+=====================================
+Task 3 
+
+using System;
+ class Program {
+ public static int Main() {
+  string num = Console.ReadLine();
+  int a = int.Parse(num);
+  int count = 0;
+  while(a != 0){
+      a /= 10;
+      count++;
+  }
+  Console.WriteLine(count);
+  return 0;
+ }
+}
+
+==================================
+
+Task 2
+
+using System;
+ class Program {
+ public static int Main() {
+  string num = Console.ReadLine();
+  int a = int.Parse(num);
+
+  for(int i = 1; i < a; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+        Console.WriteLine(i);
+    }
+  }
+  return 0;
+ }
+}
